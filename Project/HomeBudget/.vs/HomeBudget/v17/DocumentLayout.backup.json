@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Adam\\ASP.NETCoreMVCtutorial\\HomeBudget\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D276B7FE-247B-41F0-AC1D-884320BD1632}|HomeBudget\\HomeBudget.csproj|c:\\users\\adam\\asp.netcoremvctutorial\\homebudget\\homebudget\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{D276B7FE-247B-41F0-AC1D-884320BD1632}|HomeBudget\\HomeBudget.csproj|solutionrelative:homebudget\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D276B7FE-247B-41F0-AC1D-884320BD1632}|HomeBudget\\HomeBudget.csproj|c:\\users\\adam\\asp.netcoremvctutorial\\homebudget\\homebudget\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{D276B7FE-247B-41F0-AC1D-884320BD1632}|HomeBudget\\HomeBudget.csproj|solutionrelative:homebudget\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D276B7FE-247B-41F0-AC1D-884320BD1632}|HomeBudget\\HomeBudget.csproj|c:\\users\\adam\\asp.netcoremvctutorial\\homebudget\\homebudget\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{D276B7FE-247B-41F0-AC1D-884320BD1632}|HomeBudget\\HomeBudget.csproj|solutionrelative:homebudget\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D276B7FE-247B-41F0-AC1D-884320BD1632}|HomeBudget\\HomeBudget.csproj|c:\\users\\adam\\asp.netcoremvctutorial\\homebudget\\homebudget\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,30 +26,30 @@
       "DocumentGroups": [
         {
           "DockedHeight": 331,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Adam\\ASP.NETCoreMVCtutorial\\HomeBudget\\HomeBudget\\appsettings.json",
               "RelativeDocumentMoniker": "HomeBudget\\appsettings.json",
               "ToolTip": "C:\\Users\\Adam\\ASP.NETCoreMVCtutorial\\HomeBudget\\HomeBudget\\appsettings.json",
               "RelativeToolTip": "HomeBudget\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAMwBAAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-06-07T09:19:12.955Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "README.md",
               "DocumentMoniker": "C:\\Users\\Adam\\ASP.NETCoreMVCtutorial\\HomeBudget\\HomeBudget\\README.md",
               "RelativeDocumentMoniker": "HomeBudget\\README.md",
               "ToolTip": "C:\\Users\\Adam\\ASP.NETCoreMVCtutorial\\HomeBudget\\HomeBudget\\README.md",
               "RelativeToolTip": "HomeBudget\\README.md",
-              "ViewState": "AgIAANEAAAAAAAAAAAAAAOwAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAOkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
               "WhenOpened": "2025-06-06T14:18:32.582Z",
               "EditorCaption": ""
@@ -62,7 +62,7 @@
               "RelativeDocumentMoniker": "HomeBudget\\Program.cs",
               "ToolTip": "C:\\Users\\Adam\\ASP.NETCoreMVCtutorial\\HomeBudget\\HomeBudget\\Program.cs",
               "RelativeToolTip": "HomeBudget\\Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAcwEUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAUwCAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T13:46:07.625Z"
             },
