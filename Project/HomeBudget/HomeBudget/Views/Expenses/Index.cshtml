@@ -1,0 +1,139 @@
+﻿@model IEnumerable<HomeBudget.Models.Expense>
+@using System.Globalization
+
+@{
+    ViewData["Title"] = "List of Expenses";
+
+    var pl = CultureInfo.GetCultureInfo("pl-PL");
+
+    var from = ViewData["From"];
+
+    var to = ViewData["To"];
+
+    var cat = ViewData["Cat"];
+
+
+
+    @functions{
+
+        string Icon(string field)
+            {
+
+            var so = ViewContext.HttpContext.Request.Query["sortOrder"].ToString();
+
+                   return so == field ? "bi-caret-up-fill"
+
+                         : so == $"{field}_desc" ? "bi-caret-down-fill"
+
+                         : "";
+                }
+        }
+
+    var categorySort = ViewData["CategorySort"];
+
+    var amountSort = ViewData["AmountSort"];
+
+    var dateSort = ViewData["DateSort"];
+}
+
+<h1>List of Expenses</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Create New</a>
+</p>
+
+<form asp-action="Index" method="get" class="d-flex align-items-end gap-2 mt-4 mb-3">
+    <label for="from" class="form-label m-0">From</label>
+    <input type="date" id="from" name="from" class="form-control" value="@from" />
+
+    <label for="to" class="form-label m-0">To</label>
+    <input type="date" id="to" name="to" class="form-control" value="@to" />
+
+    <select name="category" id="category" class="form-select" style="width:200px;">
+        <option value="">-- all categories --</option>
+        @foreach (var c in (IEnumerable<string>)ViewBag.Categories!)
+
+        {
+            <option value="@c" selected="@(c == (string?)cat ? "selected" : null)">@c</option>
+        }
+    </select>
+
+    <button type="submit" class="btn btn-primary ms-1">Search</button>
+    <a asp-action="Index" class="btn btn-secondary ms-1">Reset</a>
+</form>
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover align-middle">
+        <thead class="table-light">
+            <tr>
+                <th>
+                    <a asp-action="Index"
+                       asp-route-sortOrder="@(categorySort)"
+                       asp-route-from="@(from)"
+                       asp-route-to="@(to)"
+                       asp-route-category="@(cat)">
+                        Category <i class='@Icon("category")'></i>
+                    </a>
+                </th>
+
+                <th class="text-end">
+                    <a asp-action="Index"
+                       asp-route-sortOrder="@(amountSort)"
+                       asp-route-from="@(from)"
+                       asp-route-to="@(to)"
+                       asp-route-category="@(cat)">
+                        Amount <i class='@Icon("amount")'></i>
+                    </a>
+                </th>
+
+                <th>
+                    <a asp-action="Index"
+                       asp-route-sortOrder="@(dateSort)"
+                       asp-route-from="@(from)"
+                       asp-route-to="@(to)"
+                       asp-route-category="@(cat)">
+                        Date <i class='@Icon("date")'></i>
+                    </a>
+                </th>
+
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Category</td>
+                    <td class="text-end">@item.Amount.ToString("C", pl)</td>
+                    <td>@item.Date.ToShortDateString()</td>
+
+                    <td class="text-nowrap">
+                        <a asp-action="Edit" asp-route-id="@item.Id"
+                           class="btn btn-sm btn-outline-primary"
+                           title="Edit">
+                            <i class="bi bi-pencil-square"></i>
+                        </a>
+
+                        <a asp-action="Details" asp-route-id="@item.Id"
+                           class="btn btn-sm btn-outline-secondary"
+                           title="Details">
+                            <i class="bi bi-info-circle"></i>
+                        </a>
+
+                        <a asp-action="Delete" asp-route-id="@item.Id"
+                           class="btn btn-sm btn-outline-danger"
+                           title="Delete">
+                            <i class="bi bi-trash"></i>
+                        </a>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="text-end fw-bold mt-2">
+    Total: @(((decimal)ViewBag.Total).ToString("C", pl))
+</div>
