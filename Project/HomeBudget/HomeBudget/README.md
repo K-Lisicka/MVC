@@ -61,7 +61,7 @@ cd <repo>
 #dodanie klucza SendGrid: Project/HomeBudget/HomeBudget/appsettings.json 
 ,
   "SendGrid": {
-   
+    
     "FromEmail": "expensesappnotification@gmail.com",
     "FromName": "Expenses App"
   }
