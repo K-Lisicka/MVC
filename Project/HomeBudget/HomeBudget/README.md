@@ -58,10 +58,11 @@ bash
 git clone https://github.com/K-Lisicka/MVC.git
 cd <repo>
 
-#dodanie klucza SendGrid: Project/HomeBudget/HomeBudget/appsettings.json 
+#wygenerowanie klucza https://sendgrid.com/en-us 
+dodanie klucza SendGrid: Project/HomeBudget/HomeBudget/appsettings.json 
 ,
   "SendGrid": {
-    
+    //"ApiKey": "miejsce na klucz",
     "FromEmail": "expensesappnotification@gmail.com",
     "FromName": "Expenses App"
   }
@@ -228,10 +229,11 @@ The project is built with the **Model – View – Controller (MVC)** pattern an
 git clone https://github.com/K-Lisicka/MVC.git
 cd <repo>
 
-#dodanie klucza SendGrid: Project/HomeBudget/HomeBudget/appsettings.json 
+#Generate API Key at https://sendgrid.com/en-us 
+add SendGrid key: Project/HomeBudget/HomeBudget/appsettings.json 
 ,
   "SendGrid": {
-    
+    //"ApiKey": "put the key here",
     "FromEmail": "expensesappnotification@gmail.com",
     "FromName": "Expenses App"
   }
